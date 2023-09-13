@@ -81,7 +81,7 @@ const HomeAdmin = () => {
                   <td>{item.lastname}</td>
                   <td>{item.position}</td>
                   <td>
-                    <button onClick={() => deleteData(item.id)}>Delete</button>
+                    <button className='delete-btn' onClick={() => deleteData(item.id)}>Delete</button>
                   </td>
                 </tr>
               ))}

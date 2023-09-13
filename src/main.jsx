@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import HomeNormal from './HomeNormal'
+import Login from './login.jsx';
 import HomeUser from './HomeUser';
 import HomeAdmin from './HomeAdmin'
 import Owner from './Owner'
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/login',
+    element: <Login />
   },
   {
     path: '/home',

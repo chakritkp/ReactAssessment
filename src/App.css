@@ -66,6 +66,30 @@ li {
   text-decoration: none
 }
 
+.login-container {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container button{
+  width: 50%;
+  background-color: lightblue;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 1rem;
+}
+
+.login label{
+  margin: 0.5rem 0;
+}
+
 .homenormal-btn button{
   margin: 2rem;
 }
@@ -122,7 +146,6 @@ input {
   padding: 1rem;
   border: 1px solid lightgray;
   background-color: white;
-  color: lightgray;
 }
 
 .homeadmin-table {
@@ -137,4 +160,9 @@ input {
 
 .owner-container h1, img ,p{
   padding-bottom: 1rem;
+}
+
+.delete-btn {
+  background-color: lightcoral;
+  color: white;
 }
