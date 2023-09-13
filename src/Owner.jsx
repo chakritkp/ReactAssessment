@@ -5,10 +5,10 @@ const Owner = () => {
   return (
     <Layout>
     <div className='owner-container'>
-        <h1 className='h1-font-size'>Name</h1>
-        <h3 className='h3-font-size'>Image</h3>
+        <h1 className='h1-font-size'>Chakrit - Group A - 07</h1>
+        <img src="https://i.ytimg.com/vi/LsXrV2f4sfg/maxresdefault.jpg" alt="" />
         <p className='h3-font-size'>Short Biography :</p>
-        <p className='normal-font-size'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid officia repellendus qui quidem deleniti ipsa reprehenderit eius sed consequatur et accusantium illo temporibus reiciendis inventore optio, numquam commodi dicta?</p>
+        <p className='normal-font-size'>แหะ ๆ หวัดดีคับ</p>
     </div>
   </Layout>
   )

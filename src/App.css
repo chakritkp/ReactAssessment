@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+img {
+  width: 70%;
+}
+
 .h1-font-size{
   font-size: 48px;
   font-weight: 700;
@@ -131,6 +135,6 @@ input {
   margin: auto;
 }
 
-.owner-container h1, h3 ,p{
+.owner-container h1, img ,p{
   padding-bottom: 1rem;
 }
