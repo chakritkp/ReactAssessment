@@ -1,0 +1,138 @@
+* {
+  background-color: aliceblue;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1-font-size{
+  font-size: 48px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.h2-font-size {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.h3-font-size {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.normal-font-size {
+  font-size: 16px;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.small-font-size {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightslategray;
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+  padding: 1rem;
+  list-style: none;
+}
+
+li {
+  padding: 1rem;
+}
+
+.link {
+  text-decoration: none
+}
+
+.homenormal-btn button{
+  margin: 2rem;
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.homeuser-container {
+  width: 60%;
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  width: 100%;
+
+}
+
+td {
+  border: 1px solid lightslategray;
+  width: 30%;
+}
+
+.table-head td {
+  padding: 1rem;
+}
+
+.table-body td {
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.homeadmin-container {
+  width: 80%;
+  margin: auto;
+}
+
+.homeadmin-input-container {
+  text-align: start;
+  padding: 1rem;
+}
+
+.homeadmin-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  
+}
+
+input {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: lightgray;
+}
+
+.homeadmin-table {
+  margin: auto;
+}
+
+.owner-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.owner-container h1, h3 ,p{
+  padding-bottom: 1rem;
+}
