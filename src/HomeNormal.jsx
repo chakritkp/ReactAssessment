@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Layout from './Layout'
 
 function HomeNormal() {
@@ -9,8 +10,14 @@ function HomeNormal() {
           <h1 className='h1-font-size'>Generation Thailand<br/>React - Assessment</h1>
         </div>
         <div className='homenormal-btn'>
-          <button className='normal-font-size'>User Home Sector</button>
-          <button className='normal-font-size'>Admin Home Sector</button>
+          <Link to='/homeuser'>
+            <button className='normal-font-size'>User Home Sector</button>
+          </Link>
+          
+          <Link to='/homeadmin'>
+            <button className='normal-font-size'>Admin Home Sector</button>
+          </Link>
+
         </div>
       </div>
     </Layout>

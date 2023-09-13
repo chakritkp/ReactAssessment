@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <HomeNormal />
   },
   {
-    path: '/homeaser',
+    path: '/homeuser',
     element: <HomeUser />
   },
   {

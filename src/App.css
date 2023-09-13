@@ -73,10 +73,8 @@ button {
 
 .homeuser-container {
   width: 60%;
-  margin-top: 3rem;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 2rem;
+  margin: auto;
 }
 
 table {
