@@ -42,13 +42,13 @@ const HomeUser = () => {
           <div className='homenormal-table'>
             <table>
               <thead>
-                <tr>
+                <tr className='table-head'>
                   <td>First Name</td>
                   <td>Last Name</td>
                   <td>Positon</td>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className='table-body'>
 
                 {member.map((item) => (
                   <tr key={item.id}>

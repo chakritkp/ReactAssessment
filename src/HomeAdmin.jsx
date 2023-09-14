@@ -10,7 +10,7 @@ const HomeAdmin = () => {
   const [reload, setReload] = useState(false);
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
-  const [position, setPositon] = useState('');
+  const [position, setPosition] = useState('');
   
   useEffect(() => {
     const getData = async() => {
@@ -20,6 +20,29 @@ const HomeAdmin = () => {
 
     getData();
   }, [reload]);
+
+    const isAlphaNumeric = (input) => /^[A-Za-z]+$/.test(input);
+
+    const handleNameChange = (ev) => {
+      const value = ev.target.value;
+      if (isAlphaNumeric(value) || value === '') {
+        setName(value);
+      }
+    };
+  
+    const handleLastnameChange = (ev) => {
+      const value = ev.target.value;
+      if (isAlphaNumeric(value) || value === '') {
+        setLastname(value);
+      }
+    };
+  
+    const handlePositionChange = (ev) => {
+      const value = ev.target.value;
+      if (isAlphaNumeric(value) || value === '') {
+        setPosition(value);
+      }
+    };
 
     const creatDataUser = async(name, lastname, position) => {
       const response = await axios.post('https://jsd5-mock-backend.onrender.com/members',
@@ -64,31 +87,38 @@ const HomeAdmin = () => {
         </div>
 
         <div className='homeadmin-input-container'>
-          <p className='h3-font-size'>Create User Here</p>
-          <div className='homeadmin-input'>
-            <input 
-            id='name'
-            onChange={(ev) => setName(ev.target.value)}
-            type="text" 
-            placeholder='First Name'
-            />
 
-            <input 
-            id='lastname'
-            onChange={(ev) => setLastname(ev.target.value)}
-            type="text" 
-            placeholder='Last Name'
-            />
+          <form>
+            <p className='h3-font-size'>Create User Here</p>
+            <div className='homeadmin-input'>
+              <input 
+              id='name'
+              onChange={handleNameChange}
+              type="text" 
+              placeholder='First Name'
+              value={name}
+              />
 
-            <input 
-            id='positon'
-            onChange={(ev) => setPositon(ev.target.value)}
-            type="text" 
-            placeholder='Position'
-            />
+              <input 
+              id='lastname'
+              onChange={handleLastnameChange}
+              type="text" 
+              placeholder='Last Name'
+              value={lastname}
+              />
 
-            <button onClick={() => creatDataUser(name, lastname, position)}>Save</button>
-          </div>
+              <input 
+              id='positon'
+              onChange={handlePositionChange}
+              type="text" 
+              placeholder='Position'
+              value={position}
+              />
+
+              <button onClick={() => creatDataUser(name, lastname, position)}>Save</button>
+            </div>
+          </form>
+          
         </div>
 
         <div className='homeadmin-table'>
