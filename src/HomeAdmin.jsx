@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from "axios";
-import HomeNormal from './HomeNormal'
+import Layout from './Layout';
+import { Link } from 'react-router-dom';
 
 const HomeAdmin = () => {
 
@@ -45,21 +46,47 @@ const HomeAdmin = () => {
 
   return (
     <>
-    <HomeNormal />
+      <Layout>
+
       <div className='homeadmin-container'>
+        <div className='homeadmin-title'>
+            <h1 className='h1-font-size'>Generation Thailand<br/>Home - Admit Sector</h1>
+          </div>
+          <div className='homenormal-btn'>
+            <Link to='/homeuser'>
+              <button className='normal-font-size'>User Home Sector</button>
+            </Link>
+            
+            <Link to='/homeadmin'>
+              <button className='normal-font-size'>Admin Home Sector</button>
+            </Link>
+
+        </div>
+
         <div className='homeadmin-input-container'>
           <p className='h3-font-size'>Create User Here</p>
           <div className='homeadmin-input'>
             <input 
+            id='name'
             onChange={(ev) => setName(ev.target.value)}
-            type="text" placeholder='First Name'/>
+            type="text" 
+            placeholder='First Name'
+            />
 
             <input 
+            id='lastname'
             onChange={(ev) => setLastname(ev.target.value)}
-            type="text" placeholder='Last Name'/>
+            type="text" 
+            placeholder='Last Name'
+            />
+
             <input 
+            id='positon'
             onChange={(ev) => setPositon(ev.target.value)}
-            type="text" placeholder='Position'/>
+            type="text" 
+            placeholder='Position'
+            />
+
             <button onClick={() => creatDataUser(name, lastname, position)}>Save</button>
           </div>
         </div>
@@ -88,7 +115,10 @@ const HomeAdmin = () => {
             </tbody>
           </table>
         </div>
-      </div>
+        </div>
+
+      </Layout>
+      
     </>
     
   )

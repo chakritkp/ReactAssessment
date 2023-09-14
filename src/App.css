@@ -105,6 +105,10 @@ button {
   margin: auto;
 }
 
+.homenormal-table {
+  margin: 2rem 0;
+}
+
 table {
   width: 100%;
 
